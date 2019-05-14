@@ -4,7 +4,7 @@ $(function() {
       var newdevoured = $(this).data("newdevoured");
   
       var newdevouredState = {
-        devoured: newdevoured
+        devoured: true
       };
   
       // Send the PUT request.
@@ -24,15 +24,15 @@ $(function() {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
-      var newbureger = {
-        bureger_name: $("#burger").val().trim(),
-        devoured:false
+      var newburger = {
+        burger_name: $("#burger").val().trim(),
+        devoured:0
       };
   
-      // Send the POST request.
+    
       $.ajax("/api/burgers", {
         type: "POST",
-        data: newbureger
+        data: newburger
       }).then(
         function() {
           console.log("created new burger");

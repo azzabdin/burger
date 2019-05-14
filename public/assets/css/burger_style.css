@@ -1,6 +1,6 @@
-li {
+ul {
     padding: 5px;
-    margin: 5px;
+    margin: 30px;
     background: #faebd7;
   }
   
@@ -17,4 +17,7 @@ li {
   .form-group {
     margin-bottom: 5px;
   }
-  
+  #left{
+    float: right;
+    margin: 30px
+  }
