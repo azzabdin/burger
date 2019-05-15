@@ -19,5 +19,17 @@ ul {
   }
   #left{
     float: right;
-    margin: 30px
+    margin: 30px;
+    margin-right: 250px
+    
+  }
+  #IM{
+    margin-left: 500px
+  }
+  #um{
+    margin-left: 250px
+  }
+  h1{
+    text-align: center;
+    margin: 50px
   }
